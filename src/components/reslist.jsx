@@ -51,22 +51,17 @@ export const ResList = () => {
     if (resInput.post === "") {
       alert("投稿内容を入力してください。");
     } else {
-      // 一回目必ず失敗するのはなぜ？二回目なら成功するのはなぜ？？
-      // new Promise((resolve)=>{
-      //   axios.post(
-      //     `https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads/${resList.threadId}/posts`,
-      //     resInput
-      //   );
-      //   console.log("処理１");
-      //   resolve();
-      // }).then(()=>{
-      //   console.log("処理２");
-      //   setRes("");
-      // }).then(()=>{
-      //   console.log("処理３");
-      //   window.location.reload();
+      //   axios
+      //     .post(
+      //       `https://2y6i6tqn41.execute-api.ap-northeast-1.amazonaws.com/threads/${resList.threadId}/posts`,
+      //       resInput
+      //     )
+      //     .then(console.log("処理１"))
+      //     .then(setRes(""))
+      //     .then(console.log("処理２"))
+      //     .then(window.location.reload())
+      //     .then(console.log("処理３"))
       // }
-      // )}};
 
       axios
         .post(

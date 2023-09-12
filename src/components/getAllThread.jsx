@@ -1,4 +1,3 @@
-
 export const GetAllThread = (url) => {
   return new Promise((resolve) => {
     fetch(url)
@@ -6,3 +5,5 @@ export const GetAllThread = (url) => {
       .then((data) => resolve(data));
   });
 };
+
+
